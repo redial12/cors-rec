@@ -42,7 +42,7 @@ exports.handler = async (event, context) => {
 			"content-type": String(headers["content-type"]) || "text/plain",
 			"access-control-allow-origin": "http://127.0.0.1:5501",
 			"access-control-allow-methods": "GET, HEAD, OPTIONS, POST, PUT",
-			"access-control-allow-headers": "access-control-allow-headers, origin, accept, x-requested-with, content-type, access-control-request-method, access-control-request-headers"
+			"access-control-allow-headers": "access-control-allow-headers, origin, accept, x-requested-with, content-type, access-control-request-method, access-control-request-headers, authorization"
 		},
 		multiValueHeaders: {
 			"set-cookie": cookie_header || []
