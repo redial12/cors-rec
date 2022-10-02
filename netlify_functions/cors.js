@@ -40,7 +40,7 @@ exports.handler = async (event, context) => {
 		body: response_text,
 		headers: {
 			"content-type": String(headers["content-type"]) || "text/plain",
-			"access-control-allow-origin": "http://127.0.0.1:5501",
+			"access-control-allow-origin": "*",
 			"access-control-allow-methods": "GET, HEAD, OPTIONS, POST, PUT",
 			"access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token,content-type,cache-control,access-control-allow-origin,access-control-allow-headers,access-control-allow-methods,access-control-allow-credentials,access-control-max-age,content-encoding,content-length,strict-transport-security,x-content-type-options,date,server,via,alt-svc"
 			// "access-control-allow-headers": "access-control-allow-headers, origin, accept, x-requested-with, content-type, access-control-request-method, access-control-request-headers, authorization"
